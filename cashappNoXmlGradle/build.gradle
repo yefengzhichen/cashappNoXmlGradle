@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.yefeng.spring'
+version = '0.0.1-SNAPSHOT'
+
+description = """cashappNoXmlGradle Maven Webapp"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+    compile group: 'org.springframework', name: 'spring-context', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-expression', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aop', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'4.3.0.RELEASE'
+    compile group: 'org.hibernate', name: 'hibernate-core', version:'5.2.1.Final'
+    compile group: 'c3p0', name: 'c3p0', version:'0.9.1.2'
+    compile group: 'mysql', name: 'mysql-connector-java', version:'6.0.3'
+    compile group: 'org.springframework', name: 'spring-orm', version:'4.3.1.RELEASE'
+    compile group: 'org.jboss.spec.javax.transaction', name: 'jboss-transaction-api_1.1_spec', version:'1.0.1.Final'
+    compile group: 'org.springframework', name: 'spring-tx', version:'4.3.1.RELEASE'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version:'1.8.9'
+    compile group: 'jstl', name: 'jstl', version:'1.2'
+    compile group: 'org.springframework', name: 'spring-test', version:'4.3.0.RELEASE'
+    compile group: 'commons-lang', name: 'commons-lang', version:'2.6'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.21'
+    compile group: 'org.hibernate.common', name: 'hibernate-commons-annotations', version:'5.0.1.Final'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+}
